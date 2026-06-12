@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="930" viewBox="0 0 720 930" font-family="'Cascadia Code','Cascadia Mono',Consolas,'Courier New',monospace" font-size="14">
+  <!-- Window -->
+  <rect x="0.5" y="0.5" width="719" height="929" rx="10" fill="#0c0c0c" stroke="#3c3c3c"/>
+  <!-- Title bar -->
+  <path d="M0.5 40 V10 Q0.5 0.5 10 0.5 H710 Q719.5 0.5 719.5 10 V40 Z" fill="#2d2d2d"/>
+  <circle cx="22" cy="20" r="6.5" fill="#ff5f57"/>
+  <circle cx="44" cy="20" r="6.5" fill="#febc2e"/>
+  <circle cx="66" cy="20" r="6.5" fill="#28c840"/>
+  <text x="360" y="25" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12" fill="#9da5b4">PowerShell — Get-Ado-Inventory.ps1</text>
+
+  <g xml:space="preserve" fill="#cccccc">
+    <text x="20" y="68"><tspan fill="#cccccc">PS C:\Projects\azdo-inventory&gt; </tspan><tspan fill="#f2f2f2">.\Get-Ado-Inventory.ps1 -Organization chhouse</tspan></text>
+
+    <text x="20" y="108"><tspan>  🚀 </tspan><tspan fill="#b4009e">Azure DevOps Inventory </tspan><tspan>— org: </tspan><tspan fill="#f9f1a5">chhouse</tspan></text>
+    <text x="20" y="128" fill="#881798">  ═══════════════════════════════════════════</text>
+
+    <text x="20" y="168"><tspan>🔑 </tspan><tspan fill="#61d6d6">Acquiring Azure DevOps access token...</tspan></text>
+    <text x="20" y="188"><tspan>✅ </tspan><tspan fill="#16c60c">Token acquired.</tspan></text>
+    <text x="20" y="208"><tspan>🔭 </tspan><tspan fill="#61d6d6">Enumerating projects...</tspan></text>
+    <text x="20" y="228"><tspan>✅ </tspan><tspan fill="#16c60c">Found 7 project(s).</tspan></text>
+
+    <text x="20" y="268"><tspan fill="#3a96dd">  📦 [1/7] </tspan><tspan fill="#f2f2f2">TfDemo</tspan></text>
+    <text x="20" y="288" fill="#767676">       📋 0  📁 1  ⚙️ 0  🔌 3  🧮 3  📖 0</text>
+    <text x="20" y="308"><tspan fill="#3a96dd">  📦 [2/7] </tspan><tspan fill="#f2f2f2">MyKomatsu Code Review</tspan></text>
+    <text x="20" y="328" fill="#767676">       📋 0  📁 1  ⚙️ 0  🔌 0  🧮 0  📖 0</text>
+    <text x="20" y="348"><tspan fill="#3a96dd">  📦 [3/7] </tspan><tspan fill="#f2f2f2">My Work</tspan></text>
+    <text x="20" y="368" fill="#767676">       📋 14  📁 2  ⚙️ 0  🔌 0  🧮 0  📖 0</text>
+    <text x="20" y="388"><tspan fill="#3a96dd">  📦 [4/7] </tspan><tspan fill="#f2f2f2">Azure API Management Demo</tspan></text>
+    <text x="20" y="408" fill="#767676">       📋 0  📁 2  ⚙️ 5  🔌 2  🧮 1  📖 0</text>
+    <text x="20" y="428"><tspan fill="#3a96dd">  📦 [5/7] </tspan><tspan fill="#f2f2f2">AuditTest</tspan></text>
+    <text x="20" y="448" fill="#767676">       📋 0  📁 1  ⚙️ 0  🔌 0  🧮 0  📖 0</text>
+    <text x="20" y="468"><tspan fill="#3a96dd">  📦 [6/7] </tspan><tspan fill="#f2f2f2">AcaAgent</tspan></text>
+    <text x="20" y="488" fill="#767676">       📋 0  📁 2  ⚙️ 2  🔌 2  🧮 0  📖 0</text>
+    <text x="20" y="508"><tspan fill="#3a96dd">  📦 [7/7] </tspan><tspan fill="#f2f2f2">Customer Work</tspan></text>
+    <text x="20" y="528" fill="#767676">       📋 11  📁 17  ⚙️ 61  🔌 13  🧮 18  📖 1</text>
+
+    <text x="20" y="568"><tspan>🌐 </tspan><tspan fill="#61d6d6">Collecting org-wide feed information...</tspan></text>
+
+    <text x="20" y="608" fill="#b4009e">  ✨ ═══════════════════════════════════ ✨</text>
+    <text x="20" y="628" fill="#b4009e">     🏆 Azure DevOps Inventory Summary</text>
+    <text x="20" y="648" fill="#b4009e">  ✨ ═══════════════════════════════════ ✨</text>
+
+    <text x="37" y="688"><tspan>🏢</tspan><tspan x="70" fill="#61d6d6">Organization</tspan><tspan x="240" fill="#f9f1a5">chhouse</tspan></text>
+    <text x="37" y="708"><tspan>📦</tspan><tspan x="70" fill="#61d6d6">Projects</tspan><tspan x="240" fill="#f9f1a5">7</tspan></text>
+    <text x="37" y="728"><tspan>📋</tspan><tspan x="70" fill="#61d6d6">Work Items</tspan><tspan x="240" fill="#f9f1a5">25</tspan></text>
+    <text x="37" y="748"><tspan>📁</tspan><tspan x="70" fill="#61d6d6">Repositories</tspan><tspan x="240" fill="#f9f1a5">26</tspan></text>
+    <text x="37" y="768"><tspan>⚙️</tspan><tspan x="70" fill="#61d6d6">Pipelines</tspan><tspan x="240" fill="#f9f1a5">68</tspan></text>
+    <text x="37" y="788"><tspan>🔌</tspan><tspan x="70" fill="#61d6d6">Service Connections</tspan><tspan x="240" fill="#f9f1a5">20</tspan></text>
+    <text x="37" y="808"><tspan>🧮</tspan><tspan x="70" fill="#61d6d6">Variable Groups</tspan><tspan x="240" fill="#f9f1a5">22</tspan></text>
+    <text x="37" y="828"><tspan>📖</tspan><tspan x="70" fill="#61d6d6">Wikis</tspan><tspan x="240" fill="#f9f1a5">1</tspan></text>
+    <text x="37" y="848"><tspan>📚</tspan><tspan x="70" fill="#61d6d6">Artifact Feeds</tspan><tspan x="240" fill="#f9f1a5">3</tspan></text>
+
+    <text x="20" y="888"><tspan>💾 </tspan><tspan fill="#16c60c">Report written to: .\ado-inventory\ado-org-summary.csv</tspan></text>
+    <text x="20" y="908"><tspan>🎉 </tspan><tspan fill="#16c60c">Inventory complete!</tspan></text>
+  </g>
+</svg>

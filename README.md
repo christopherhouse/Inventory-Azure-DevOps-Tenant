@@ -77,41 +77,9 @@ az account list --query "[].{name:name, tenantId:tenantId}" -o table
 
 ## 🖥️ Sample output
 
-```
-  🚀 Azure DevOps Inventory — org: contoso
-  ═══════════════════════════════════════════
+A real run against a live organization:
 
-🔑 Acquiring Azure DevOps access token...
-✅ Token acquired.
-🔭 Enumerating projects...
-✅ Found 3 project(s).
-
-  📦 [1/3] Widgets
-       📋 412  📁 9  ⚙️ 14  🔌 5  🧮 7  📖 1
-  📦 [2/3] Gadgets
-       📋 87   📁 4  ⚙️ 6   🔌 2  🧮 3  📖 0
-  📦 [3/3] Gizmos
-       📋 230  📁 6  ⚙️ 11  🔌 4  🧮 5  📖 1
-
-🌐 Collecting org-wide feed information...
-
-  ✨ ═══════════════════════════════════ ✨
-     🏆 Azure DevOps Inventory Summary
-  ✨ ═══════════════════════════════════ ✨
-
-  🏢 Organization        contoso
-  📦 Projects            3
-  📋 Work Items          729
-  📁 Repositories        19
-  ⚙️ Pipelines           31
-  🔌 Service Connections 11
-  🧮 Variable Groups     15
-  📖 Wikis               2
-  📚 Artifact Feeds      4
-
-💾 Report written to: .\ado-inventory\ado-org-summary.csv
-🎉 Inventory complete!
-```
+![Terminal output of Get-Ado-Inventory.ps1: per-project counts followed by an org-level summary table and CSV export](docs/sample-run.svg)
 
 ### 📄 CSV output
 
@@ -119,7 +87,7 @@ The script writes `ado-org-summary.csv` to the output folder with one summary ro
 
 ```csv
 "Organization","Projects","WorkItems","Repositories","Pipelines","ServiceConnections","VariableGroups","Wikis","ArtifactFeeds"
-"contoso","3","729","19","31","11","15","2","4"
+"chhouse","7","25","26","68","20","22","1","3"
 ```
 
 A `?` in console output (or a blank CSV cell) means that particular count couldn't be retrieved — usually a permissions gap on a single API — while the rest of the inventory carries on. 💪
